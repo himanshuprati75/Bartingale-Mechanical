@@ -66,7 +66,7 @@ export default function ServicesGrid({ onSelectService }) {
       category: 'automation',
       title: 'Building Automation Systems & DDC Controls',
       tag: 'Energy Optimization',
-      image: '/images/copper_valves.png',
+      image: '/images/building_automation.jpg',
       points: [
         'Open-protocol BACnet, LonWorks, and Modbus control architecture',
         'Remote cloud dashboard monitoring and automated alarm thresholds',
@@ -80,7 +80,7 @@ export default function ServicesGrid({ onSelectService }) {
       category: 'fabrication',
       title: 'Custom Sheet Metal & Precision Fabrication',
       tag: 'In-House Eau Claire Shop',
-      image: '/images/fleet_van.jpg',
+      image: '/images/sheet_metal_fabrication.jpg',
       points: [
         'Fully equipped Eau Claire sheet metal shop with CNC plasma tables',
         'Heavy-gauge industrial dust collection and fume extraction ducting',

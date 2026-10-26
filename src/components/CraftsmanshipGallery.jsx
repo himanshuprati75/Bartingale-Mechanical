@@ -30,7 +30,7 @@ export default function CraftsmanshipGallery({ onOpenCallModal }) {
       caption: 'High-volume commercial copper distribution manifold with dual reduced pressure zone (RPZ) backflow assemblies for total water safety.',
     },
     {
-      image: '/images/copper_valves.png',
+      image: '/images/pipe_welding.jpg',
       title: 'Laser-Straight Copper Soldering & Ball Valves',
       category: 'Piping & Valves',
       caption: 'Heavy-duty full-port brass isolation ball valves soldered with lead-free silver alloy for industrial cooling loops in western Wisconsin.',
