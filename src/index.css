@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* Bartingale Signature Crimson Glow for emergency CTAs */
+@keyframes crimson-emergency-glow {
+  0%, 100% {
+    box-shadow: 0 0 16px rgba(200, 16, 46, 0.45), 0 0 32px rgba(200, 16, 46, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(200, 16, 46, 0.85), 0 0 48px rgba(200, 16, 46, 0.45);
+  }
+}
+
+/* Industrial Gold Glow for 110-year heritage credentials */
+@keyframes gold-heritage-glow {
+  0%, 100% {
+    box-shadow: 0 0 14px rgba(217, 119, 6, 0.45), 0 0 28px rgba(217, 119, 6, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 26px rgba(217, 119, 6, 0.8), 0 0 42px rgba(217, 119, 6, 0.35);
+  }
+}
+
+.btn-emergency-glow {
+  animation: crimson-emergency-glow 2s infinite ease-in-out;
+}
+
+.btn-gold-glow {
+  animation: gold-heritage-glow 2s infinite ease-in-out;
+}
+
+/* Radar pulse animation for live engineering dispatch indicator */
+@keyframes radar-pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(2.0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.0);
+    opacity: 0;
+  }
+}
+
+.radar-ping {
+  animation: radar-pulse 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Accessibility: Respect user prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .btn-emergency-glow,
+  .btn-gold-glow,
+  .radar-ping {
+    animation: none !important;
+  }
+}
